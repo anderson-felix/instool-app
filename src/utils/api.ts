@@ -1,7 +1,7 @@
 import Axios from 'axios';
 
 export const api = Axios.create({
-  baseURL: 'https://instool.herokuapp.com/'
+  baseURL: 'http://localhost:3001/'
 })
 
 api.interceptors.response.use(
