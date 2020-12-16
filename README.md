@@ -1,2 +1,3 @@
-# instool-app
- desafio reportei - consulta instagram
+# desafio reportei
+
+To execute App == yarn start
