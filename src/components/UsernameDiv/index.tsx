@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Card } from "antd";
+import React from 'react';
+import styled from 'styled-components';
+import { Card } from 'antd';
 
 export const UsernameDiv = styled(Card)`
   width: 50%;
