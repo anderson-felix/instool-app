@@ -1,6 +1,5 @@
 import React from 'react';
-import { message, Input, Image, Typography, Descriptions, Button } from 'antd';
-import { createGlobalStyle } from 'styled-components';
+import { message, Input, Typography, Descriptions, Button } from 'antd';
 import { useStateful } from 'react-hanger';
 
 import { ParentDiv } from '../components/ParentDiv';
@@ -10,7 +9,6 @@ import { SaveData } from '../controllers/SaveData';
 import { User } from '../interfaces/UserModel';
 import 'typeface-poppins';
 import Logo from '../images/INSTOOL.png';
-import Icon from '../images/cubo.svg';
 
 const App = () => {
   const instagramData = useStateful<User | undefined>(undefined);
@@ -52,6 +50,7 @@ const App = () => {
   return (
     <React.Fragment>
       <ParentDiv>
+        {/* eslint-disable-next-line */}
         <img src={Logo} className="instool" />
         <UsernameDiv>
           <Typography.Text>
@@ -73,6 +72,7 @@ const App = () => {
         </UsernameDiv>
         {!!instagramData.value && (
           <React.Fragment>
+            {/* eslint-disable-next-line */}
             <img className="avatar" src={instagramData.value.profile_pic_url} />
             <Descriptions className="detalhes" bordered>
               <Descriptions.Item label="Nome do usuário:">
