@@ -12,5 +12,5 @@ export interface User {
   follow: number;
   followed_by: number;
   timeline_media_count: number;
-  error?:string
+  error?: string;
 }
